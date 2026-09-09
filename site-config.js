@@ -1,72 +1,58 @@
 window.FORM_CONFIG = {
   "source": "pinterestboard",
   "repo": "pinterestboard_form",
-  "product": "pinterestboard",
-  "sourceForm": "pinterestboard.html",
-  "context": "interactive pinterest moodboard 10-pin grid birthday archive",
+  "product": "urpinterestboard",
+  "sourceForm": "urpinterestboard.html",
+  "context": "interactive pinterest-style birthday board",
   "motif": "📌",
-  "media": "10 foto aesthetic pins (9 gallery + 1 letter pin) + 3 file musik MP3",
+  "media": "8 foto (8 pin polaroid) + 3 file musik MP3",
   "theme": "pinterest",
   "palette": [
     "#E60023",
+    "#5F5F5F",
     "#111111",
-    "#F0F0F0",
-    "#767676",
+    "#EFEFEF",
     "#FFFFFF",
-    "#FF5A5F"
+    "#FAFAFA"
   ],
-  "price": 25000,
+  "price": 16000,
   "sections": [
     {
       "id": "02",
-      "title": "board profile & header identity",
+      "title": "board profile & birthday identity",
       "fields": [
         {
-          "key": "recipient_name",
-          "label": "nama pemilik board / birthday person",
+          "key": "profile_name",
+          "label": "nama akun / nama yang berulang tahun",
           "placeholder": "default: catherine",
           "long": false,
           "required": false
         },
         {
-          "key": "recipient_handle",
-          "label": "handle / username pemilik",
-          "placeholder": "default: @catherine",
+          "key": "profile_fullname",
+          "label": "nama lengkap penerima",
+          "placeholder": "default: catherine miller",
           "long": false,
           "required": false
         },
         {
-          "key": "sender_name",
+          "key": "curator_name",
           "label": "nama pengirim / kurator board",
-          "placeholder": "default: avery",
+          "placeholder": "default: avery smith",
           "long": false,
-          "required": false
-        },
-        {
-          "key": "sender_handle",
-          "label": "handle / username pengirim",
-          "placeholder": "default: @avery",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "board_title",
-          "label": "judul pinterest board",
-          "placeholder": "default: catherine's chapter 17",
-          "long": false,
-          "required": false
-        },
-        {
-          "key": "board_bio",
-          "label": "bio / deskripsi board",
-          "placeholder": "default: a curated digital moodboard archiving your chaotic energy, top-tier playlists, late-night yapping sessions, and all the random memories in between. happy 17th birthday, cath.",
-          "long": true,
           "required": false
         },
         {
           "key": "birthday_date",
-          "label": "tanggal perayaan",
-          "placeholder": "default: october 14, 2026",
+          "label": "tanggal ulang tahun",
+          "placeholder": "default: september 5, 2026",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "search_placeholder",
+          "label": "placeholder kolom pencarian",
+          "placeholder": "default: search for memories, songs, or letters...",
           "long": false,
           "required": false
         }
@@ -74,47 +60,61 @@ window.FORM_CONFIG = {
     },
     {
       "id": "03",
-      "title": "photo pins 1 - 3 (polaroids & candid notes)",
+      "title": "photo pins 01–04 (4 foto kenangan pertama)",
       "fields": [
         {
-          "key": "pin1_title",
-          "label": "pin 1 (photo-1) · judul",
-          "placeholder": "default: 2 am yapping sessions",
+          "key": "pin1_caption",
+          "label": "foto 1 (photo-1.jpg) — caption singkat",
+          "placeholder": "default: staring out the train window like you're in an indie music video",
           "long": false,
           "required": false
         },
         {
-          "key": "pin1_note",
-          "label": "pin 1 · personal note",
-          "placeholder": "default: we can literally sit in silence for twenty minutes and then suddenly start a two-hour debate about the most unhinged topics. no one gets my brain rot quite like you do.",
+          "key": "pin1_story",
+          "label": "foto 1 (photo-1.jpg) — cerita lengkap (modal viewer)",
+          "placeholder": "default: we were on the train heading back and you went dead silent staring out the window with your oversized hoodie looking all poetic. i literally asked what you were deep in thought about, and you just went: 'i'm starving, what are we eating'. zero thoughts, just pure vibes.",
           "long": true,
           "required": false
         },
         {
-          "key": "pin2_title",
-          "label": "pin 2 (photo-2) · judul",
-          "placeholder": "default: the signature side-eye",
+          "key": "pin2_caption",
+          "label": "foto 2 (photo-2.jpg) — caption singkat",
+          "placeholder": "default: you were giggling so hard you couldn't even breathe",
           "long": false,
           "required": false
         },
         {
-          "key": "pin2_note",
-          "label": "pin 2 · personal note",
-          "placeholder": "default: captured this right after i made the worst pun in human history. you pretended to hate it, but you literally laughed five seconds later. classic cath.",
+          "key": "pin2_story",
+          "label": "foto 2 (photo-2.jpg) — cerita lengkap (modal viewer)",
+          "placeholder": "default: this was right when the dessert came and i dropped the most unhinged story out of nowhere. you choked on your laugh so loud you had to cover your whole face so the entire cafe wouldn't stare. this exact smile lives completely rent free in my head.",
           "long": true,
           "required": false
         },
         {
-          "key": "pin3_title",
-          "label": "pin 3 (photo-3) · judul",
-          "placeholder": "default: iced matcha over everything",
+          "key": "pin3_caption",
+          "label": "foto 3 (photo-4.jpg) — caption singkat",
+          "placeholder": "default: not a single serious thought between us and i love it",
           "long": false,
           "required": false
         },
         {
-          "key": "pin3_note",
-          "label": "pin 3 · personal note",
-          "placeholder": "default: your unhealthy emotional attachment to iced matcha needs to be studied in a lab. pretty sure you're 70% water and 30% oat milk at this point.",
+          "key": "pin3_story",
+          "label": "foto 3 (photo-4.jpg) — cerita lengkap (modal viewer)",
+          "placeholder": "default: we came out here claiming we were just gonna chill on the grass, but then we started chasing each other and hitting the most dramatic theatrical poses known to man. look at your hand reaching for destiny. we were literally rolling on the ground laughing.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "pin4_caption",
+          "label": "foto 4 (photo-8.jpg) — caption singkat",
+          "placeholder": "default: proof you will turn literally any random alley into a runway",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "pin4_story",
+          "label": "foto 4 (photo-8.jpg) — cerita lengkap (modal viewer)",
+          "placeholder": "default: we were hopelessly lost behind the studio, spotted a rusty ladder and some random sign on the wall, and your immediate instinct was: 'take a pic right now, the lighting is insane'. you are actually so unserious but somehow the shot still turned out iconic.",
           "long": true,
           "required": false
         }
@@ -122,47 +122,61 @@ window.FORM_CONFIG = {
     },
     {
       "id": "04",
-      "title": "photo pins 4 - 6 (memories & fits)",
+      "title": "photo pins 05–08 (4 foto kenangan kedua)",
       "fields": [
         {
-          "key": "pin4_title",
-          "label": "pin 4 (photo-4) · judul",
-          "placeholder": "default: fit check of the century",
+          "key": "pin5_caption",
+          "label": "foto 5 (photo-9.jpg) — caption singkat",
+          "placeholder": "default: the duality of our friendship captured in one frame",
           "long": false,
           "required": false
         },
         {
-          "key": "pin4_note",
-          "label": "pin 4 · personal note",
-          "placeholder": "default: you spent forty-five minutes picking this outfit, took two hundred photos, and then claimed you had 'nothing to wear.' you still ate down though, ngl.",
+          "key": "pin5_story",
+          "label": "foto 5 (photo-9.jpg) — cerita lengkap (modal viewer)",
+          "placeholder": "default: midnight burger run because neither of us knows how to sleep on time. you tried so hard to look nonchalant while i was acting completely unhinged at the counter. this is literally our dynamic summarized in one picture.",
           "long": true,
           "required": false
         },
         {
-          "key": "pin5_title",
-          "label": "pin 5 (photo-5) · judul",
-          "placeholder": "default: blurry golden hour",
+          "key": "pin6_caption",
+          "label": "foto 6 (photo-15.jpg) — caption singkat",
+          "placeholder": "default: you looking like an absolute angel at the piano",
           "long": false,
           "required": false
         },
         {
-          "key": "pin5_note",
-          "label": "pin 5 · personal note",
-          "placeholder": "default: the camera couldn't focus because we were laughing way too hard. blurry photos with you always hit different anyway.",
+          "key": "pin6_story",
+          "label": "foto 6 (photo-15.jpg) — cerita lengkap (modal viewer)",
+          "placeholder": "default: you sat down at the grand piano in that white dress and casually started playing a few chords. i called your name, you turned around, and i caught this. the lighting, the smile, the whole vibe was so ethereal it genuinely didn't feel real.",
           "long": true,
           "required": false
         },
         {
-          "key": "pin6_title",
-          "label": "pin 6 (photo-6) · judul",
-          "placeholder": "default: sunset drive aux privilege",
+          "key": "pin7_caption",
+          "label": "foto 7 (photo-10.jpg) — caption singkat",
+          "placeholder": "default: the blonde hair era was top tier and nobody can convince me otherwise",
           "long": false,
           "required": false
         },
         {
-          "key": "pin6_note",
-          "label": "pin 6 · personal note",
-          "placeholder": "default: you immediately hijacked the aux cable and played the most immaculate playlist known to humanity. sunset drives with you just hit different.",
+          "key": "pin7_story",
+          "label": "foto 7 (photo-10.jpg) — cerita lengkap (modal viewer)",
+          "placeholder": "default: you sent this selfie out of nowhere right after finishing your makeup asking if your hair looked weird, knowing full well you looked stunning. you have this annoying habit of looking effortlessly pretty without even trying.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "pin8_caption",
+          "label": "foto 8 (photo-20.jpg) — caption singkat",
+          "placeholder": "default: this one has my whole heart, no debate",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "pin8_story",
+          "label": "foto 8 (photo-20.jpg) — cerita lengkap (modal viewer)",
+          "placeholder": "default: a random 2 am facetime snap when you were resting your cheek on your hand just rambling about life. no crazy filters, just you being your genuine, soft self. happy 17th, cath. never stop being the person who makes everything so easy and warm.",
           "long": true,
           "required": false
         }
@@ -170,26 +184,89 @@ window.FORM_CONFIG = {
     },
     {
       "id": "05",
-      "title": "music pins 1 - 3 (3 playable song pins)",
+      "title": "song pins (3 spinning vinyl tracks)",
       "fields": [
         {
-          "key": "song1_info",
-          "label": "song pin 1 · judul, artis & personal note",
-          "placeholder": "default: espresso — sabrina carpenter (that's that me espresso... personal note: you played this so many times during our summer drives...)",
+          "key": "song1_title",
+          "label": "lagu 1 — judul lagu & musisi",
+          "placeholder": "default: daylight - taylor swift",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song1_album",
+          "label": "lagu 1 — album",
+          "placeholder": "default: lover",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song1_quote",
+          "label": "lagu 1 — kutipan lirik favorit",
+          "placeholder": "default: i once believed love would be burning red, but it's golden like daylight.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song1_note",
+          "label": "lagu 1 — catatan personal di modal",
+          "placeholder": "default: you put me on this song during that late night drive when neither of us wanted to go home yet. now whenever the bridge kicks in, i literally just think of you.",
           "long": true,
           "required": false
         },
         {
-          "key": "song2_info",
-          "label": "song pin 2 · judul, artis & personal note",
-          "placeholder": "default: girls just want to have fun — cyndi lauper (personal note: our unofficial anthem every time we do something chaotic...)",
+          "key": "song2_title",
+          "label": "lagu 2 — judul lagu & musisi",
+          "placeholder": "default: girls just wanna have fun - cyndi lauper",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song2_album",
+          "label": "lagu 2 — album",
+          "placeholder": "default: she's so unusual",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song2_quote",
+          "label": "lagu 2 — kutipan lirik favorit",
+          "placeholder": "default: the undisputed timeless anthem for unhinged girls' nights.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song2_note",
+          "label": "lagu 2 — catatan personal di modal",
+          "placeholder": "default: this has been your chaotic main character energy since day one. whenever this comes on, you immediately start dancing like nobody is watching.",
           "long": true,
           "required": false
         },
         {
-          "key": "song3_info",
-          "label": "song pin 3 · judul, artis & personal note",
-          "placeholder": "default: cherish (my love) — illit (personal note: you literally forced me to listen to this on repeat until i knew every beat...)",
+          "key": "song3_title",
+          "label": "lagu 3 — judul lagu & musisi",
+          "placeholder": "default: cherish (my love) - illit",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song3_album",
+          "label": "lagu 3 — album",
+          "placeholder": "default: i'll like you",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song3_quote",
+          "label": "lagu 3 — kutipan lirik favorit",
+          "placeholder": "default: ch-ch-ch-cherish my love, this song is permanently stuck in my head.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "song3_note",
+          "label": "lagu 3 — catatan personal di modal",
+          "placeholder": "default: you literally forced me to listen to this on repeat until i knew every single beat. it's so energetic, sweet, and chaotic, which honestly describes you.",
           "long": true,
           "required": false
         }
@@ -197,25 +274,67 @@ window.FORM_CONFIG = {
     },
     {
       "id": "06",
-      "title": "the letter pin (full 17th birthday letter)",
+      "title": "birthday letter pin (personal letter)",
       "fields": [
         {
-          "key": "letter_preview_title",
-          "label": "preview title pin surat",
+          "key": "letter_title",
+          "label": "judul pin surat ulang tahun",
           "placeholder": "default: okay, birthday speech incoming...",
           "long": false,
           "required": false
         },
         {
-          "key": "letter_full",
-          "label": "isi lengkap surat ulang tahun (full speech letter)",
-          "placeholder": "default: happy 17th, cath. it's actually wild looking back at how this all started on the most ordinary day. when we first started talking, it was probably meant to be a two-minute exchange...",
+          "key": "letter_subtitle",
+          "label": "sub-judul pin surat",
+          "placeholder": "default: read this when you have a minute.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "letter_salutation",
+          "label": "salam pembuka surat",
+          "placeholder": "default: happy 17th, cath.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "letter_p1",
+          "label": "paragraf 1 (awal mula mengenal)",
+          "placeholder": "default: it's actually wild looking back at how this all started on the most ordinary day. when we first started talking, it was probably meant to be a two-minute exchange, but somehow the conversation just never stopped. talking to you went from a random occurrence to the easiest part of my everyday routine.",
           "long": true,
           "required": false
         },
         {
-          "key": "letter_closing",
-          "label": "kalimat penutup & nama",
+          "key": "letter_p2",
+          "label": "paragraf 2 (dinamika & kenyamanan)",
+          "placeholder": "default: we have this chaotic dynamic where we can yap for hours about absolutely nothing, roast each other without anyone getting butthurt, and send the most unhinged memes at 2 am. even when life gets busy and we go quiet for a bit, picking right back up feels so seamless like zero time has passed. that kind of effortless chemistry is genuinely rare, and i don't take it for granted.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "letter_p3",
+          "label": "paragraf 3 (kebiasaan manis & galeri memori)",
+          "placeholder": "default: you have this habit of saying the most random, out-of-pocket things that you probably forget five minutes later, but they end up living rent-free in my head for weeks. you lowkey just slipped into my daily life and made everything ten times more fun. that's also why my camera roll is basically just you: blurry candids, aesthetic fits, and unhinged moments that never fail to make me smile.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "letter_p4",
+          "label": "paragraf 4 (doa & harapan tulus)",
+          "placeholder": "default: catherine, turning 17 is insane. it feels like we were just talking about dumb stuff yesterday. my only wish for you this year is super simple: i hope life is genuinely good to you. like, truly, unapologetically good. keep being the loud, funny, radiant person who lights up every room, stop overthinking things that haven't even happened yet, and please give yourself credit for how loved and appreciated you are.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "letter_p5",
+          "label": "paragraf 5 (penutup hangat)",
+          "placeholder": "default: anyway, wrapping this up before i get too sentimental and embarrass myself. happy 17th birthday, cath. here's to more late-night talks, top-tier playlists, and chaotic memories we haven't even made yet. i'm really, really glad you're in my life.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "letter_sign",
+          "label": "tanda tangan penutup",
           "placeholder": "default: your favorite human, avery",
           "long": false,
           "required": false
