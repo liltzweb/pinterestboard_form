@@ -3,9 +3,9 @@ window.FORM_CONFIG = {
   "repo": "pinterestboard_form",
   "product": "urpinterestboard",
   "sourceForm": "urpinterestboard.html",
-  "context": "interactive pinterest-style birthday board",
+  "context": "interactive pinterest-style birthday board · 8 photos, 3 songs & personal letter",
   "motif": "📌",
-  "media": "8 foto (8 pin polaroid) + 3 file musik MP3",
+  "media": "8 foto kenangan pin + 1 cover surat (letter.jpg) + 1 foto avatar (avatar.jpg) + 3 file musik MP3",
   "theme": "pinterest",
   "palette": [
     "#E60023",
@@ -44,7 +44,7 @@ window.FORM_CONFIG = {
         },
         {
           "key": "birthday_date",
-          "label": "tanggal ulang tahun",
+          "label": "tanggal ulang tahun & perayaan",
           "placeholder": "default: september 5, 2026",
           "long": false,
           "required": false
@@ -70,6 +70,13 @@ window.FORM_CONFIG = {
           "required": false
         },
         {
+          "key": "pin1_meta",
+          "label": "foto 1 (photo-1.jpg) — tanggal & lokasi momen",
+          "placeholder": "default: may 14, 2025 · commuter train",
+          "long": false,
+          "required": false
+        },
+        {
           "key": "pin1_story",
           "label": "foto 1 (photo-1.jpg) — cerita lengkap (modal viewer)",
           "placeholder": "default: we were on the train heading back and you went dead silent staring out the window with your oversized hoodie looking all poetic. i literally asked what you were deep in thought about, and you just went: 'i'm starving, what are we eating'. zero thoughts, just pure vibes.",
@@ -80,6 +87,13 @@ window.FORM_CONFIG = {
           "key": "pin2_caption",
           "label": "foto 2 (photo-2.jpg) — caption singkat",
           "placeholder": "default: you were giggling so hard you couldn't even breathe",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "pin2_meta",
+          "label": "foto 2 (photo-2.jpg) — tanggal & lokasi momen",
+          "placeholder": "default: august 22, 2025 · monk's dessert bar",
           "long": false,
           "required": false
         },
@@ -98,6 +112,13 @@ window.FORM_CONFIG = {
           "required": false
         },
         {
+          "key": "pin3_meta",
+          "label": "foto 3 (photo-4.jpg) — tanggal & lokasi momen",
+          "placeholder": "default: july 8, 2025 · meadow park green",
+          "long": false,
+          "required": false
+        },
+        {
           "key": "pin3_story",
           "label": "foto 3 (photo-4.jpg) — cerita lengkap (modal viewer)",
           "placeholder": "default: we came out here claiming we were just gonna chill on the grass, but then we started chasing each other and hitting the most dramatic theatrical poses known to man. look at your hand reaching for destiny. we were literally rolling on the ground laughing.",
@@ -108,6 +129,13 @@ window.FORM_CONFIG = {
           "key": "pin4_caption",
           "label": "foto 4 (photo-8.jpg) — caption singkat",
           "placeholder": "default: proof you will turn literally any random alley into a runway",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "pin4_meta",
+          "label": "foto 4 (photo-8.jpg) — tanggal & lokasi momen",
+          "placeholder": "default: august 4, 2025 · behind the studio alley",
           "long": false,
           "required": false
         },
@@ -132,6 +160,13 @@ window.FORM_CONFIG = {
           "required": false
         },
         {
+          "key": "pin5_meta",
+          "label": "foto 5 (photo-9.jpg) — tanggal & lokasi momen",
+          "placeholder": "default: july 20, 2025 · late night burger joint",
+          "long": false,
+          "required": false
+        },
+        {
           "key": "pin5_story",
           "label": "foto 5 (photo-9.jpg) — cerita lengkap (modal viewer)",
           "placeholder": "default: midnight burger run because neither of us knows how to sleep on time. you tried so hard to look nonchalant while i was acting completely unhinged at the counter. this is literally our dynamic summarized in one picture.",
@@ -142,6 +177,13 @@ window.FORM_CONFIG = {
           "key": "pin6_caption",
           "label": "foto 6 (photo-15.jpg) — caption singkat",
           "placeholder": "default: you looking like an absolute angel at the piano",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "pin6_meta",
+          "label": "foto 6 (photo-15.jpg) — tanggal & lokasi momen",
+          "placeholder": "default: october 6, 2025 · sunlit piano studio",
           "long": false,
           "required": false
         },
@@ -160,6 +202,13 @@ window.FORM_CONFIG = {
           "required": false
         },
         {
+          "key": "pin7_meta",
+          "label": "foto 7 (photo-10.jpg) — tanggal & lokasi momen",
+          "placeholder": "default: august 16, 2025 · cath's room",
+          "long": false,
+          "required": false
+        },
+        {
           "key": "pin7_story",
           "label": "foto 7 (photo-10.jpg) — cerita lengkap (modal viewer)",
           "placeholder": "default: you sent this selfie out of nowhere right after finishing your makeup asking if your hair looked weird, knowing full well you looked stunning. you have this annoying habit of looking effortlessly pretty without even trying.",
@@ -170,6 +219,13 @@ window.FORM_CONFIG = {
           "key": "pin8_caption",
           "label": "foto 8 (photo-20.jpg) — caption singkat",
           "placeholder": "default: this one has my whole heart, no debate",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "pin8_meta",
+          "label": "foto 8 (photo-20.jpg) — tanggal & lokasi momen",
+          "placeholder": "default: september 5, 2026 · late night call",
           "long": false,
           "required": false
         },
@@ -333,9 +389,16 @@ window.FORM_CONFIG = {
           "required": false
         },
         {
-          "key": "letter_sign",
+          "key": "letter_closing",
+          "label": "kalimat penutup surat",
+          "placeholder": "default: your favorite human,",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "letter_signature",
           "label": "tanda tangan penutup",
-          "placeholder": "default: your favorite human, avery",
+          "placeholder": "default: avery",
           "long": false,
           "required": false
         }
